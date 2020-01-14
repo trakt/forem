@@ -1,7 +1,7 @@
 module Forem
   module Admin
     class ForumsController < BaseController
-      before_filter :find_forum, :only => [:edit, :update, :destroy]
+      before_action :find_forum, :only => [:edit, :update, :destroy]
 
       def index
         @forums = Forem::Forum.all

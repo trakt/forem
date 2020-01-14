@@ -1,8 +1,8 @@
 module Forem
   class PostsController < Forem::ApplicationController
-    before_filter :authenticate_forem_user, except: :show
-    before_filter :find_topic
-    before_filter :reject_locked_topic!, only: [:new, :create]
+    before_action :authenticate_forem_user, except: :show
+    before_action :find_topic
+    before_action :reject_locked_topic!, only: [:new, :create]
 
     def show
       find_post

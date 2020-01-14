@@ -1,7 +1,7 @@
 module Forem
   module Admin
     class TopicsController < BaseController
-      before_filter :find_topic
+      before_action :find_topic
 
       def update
         if @topic.update_attributes(topic_params)

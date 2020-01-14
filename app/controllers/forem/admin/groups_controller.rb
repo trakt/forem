@@ -1,7 +1,7 @@
 module Forem
   module Admin
     class GroupsController < BaseController
-      before_filter :find_group, :only => [:show, :destroy]
+      before_action :find_group, :only => [:show, :destroy]
 
       def index
         @groups = Forem::Group.all

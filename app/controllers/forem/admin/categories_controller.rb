@@ -1,7 +1,7 @@
 module Forem
   module Admin
     class CategoriesController < BaseController
-      before_filter :find_category, :only => [:edit, :update, :destroy]
+      before_action :find_category, :only => [:edit, :update, :destroy]
 
       def index
         @categories = Forem::Category.by_position
