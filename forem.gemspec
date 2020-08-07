@@ -27,8 +27,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'sanitize', '2.0.6'
   s.add_dependency 'workflow', '1.0.0'
   s.add_dependency 'gemoji', '= 2.1.0'
-  s.add_dependency 'decorators', '~> 1.0.2'
+  s.add_dependency 'decorators'
   s.add_dependency 'select2-rails', '~> 3.5.4'
-  s.add_dependency 'friendly_id', '~> 5.0'
+  s.add_dependency 'friendly_id'
   s.add_dependency 'cancancan', '~> 1.7'
 end
